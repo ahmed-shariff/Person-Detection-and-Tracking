@@ -120,7 +120,8 @@ class PersonDetector(object):
               idx_vec = [i for i, v in enumerate(cls) if ((v==1) and (scores[i]>0.3))]
               
               if len(idx_vec) ==0:
-                  print('no detection!')
+                  # print('no detection!')
+                  pass
               else:
                   tmp_car_boxes=[]
                   for idx in idx_vec:
@@ -132,7 +133,8 @@ class PersonDetector(object):
                       
                       #if ((ratio < 0.8) and (box_h>20) and (box_w>20)):
                       tmp_car_boxes.append(box)
-                      print(box, ', confidence: ', scores[idx], 'ratio:', ratio)
+                      # print(box, ', confidence: ', scores[idx], 'ratio:', ratio)
+                      
                       '''   
                       else:
                           print('wrong ratio or wrong size, ', box, ', confidence: ', scores[idx], 'ratio:', ratio)
