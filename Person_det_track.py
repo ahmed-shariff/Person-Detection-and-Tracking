@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import glob
 #from moviepy.editor import VideoFileClip
 from collections import deque
-from sklearn.utils.linear_assignment_ import linear_assignment
+from scipy.optimize import linear_sum_assignment
 
 import helpers
 import detector
